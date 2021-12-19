@@ -1,4 +1,4 @@
-# Neuralmar:Image watermarking using deeplearning
+# Neuralmark:Image watermarking using deeplearning
 Building the next-gen watermark with deep learning: imperceptibly encoding images with un-erasable patterns to verify content ownership.
 
 ## What it does:
