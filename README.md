@@ -1,8 +1,8 @@
-# NeuralHash: An Adversarial Steganographic Method For Robust, Imperceptible Watermarking
+# Neuralmar:Image watermarking using deeplearning
 Building the next-gen watermark with deep learning: imperceptibly encoding images with un-erasable patterns to verify content ownership.
 
 ## What it does:
-Given an image (like Scream), Neuralhash makes small perturbations to visually encode a unique signature of the author:
+Given an image (like Scream), Neuralmark makes small perturbations to visually encode a unique signature of the author:
 
 <img width="1011" alt="original_to_watermarked" src="https://user-images.githubusercontent.com/10892180/43042515-fa9123c2-8d34-11e8-98d2-b65e05c18ead.png">
 
@@ -51,6 +51,4 @@ The development of a secure watermarking scheme is an important problem that has
 
 By performing projective gradient descent on the decoder model with respect to a given image, we can use it to “sign” images robustly (think of a more advanced watermark). We start with the original image, then repeatedly tweak the pixel values such that the image (and all transformations, including scaling, rotation, adding noise, blurring, random cropping, and more) decodes to a specified 32-bit code. The resultant image will be almost imperceptible from the original image, yet contain an easily-decodable signature that cannot be removed even by the most dedicated of adversaries.
 
-We also propose a method to train our decoder network under the Expectation-Maximization (EM) framework to learn feature transformations that are more resilient to the threat space of attacks. Experimental results indicate that our model achieves robustness across different transformations such as scaling and rotating, with improved results over the length of EM training. Furthermore, we show an inherent trade-off between robustness and imperceptibility, which allows the user of the model flexibility in adjusting parameters to fit a particular task.
 
-Paper and more details coming soon.
